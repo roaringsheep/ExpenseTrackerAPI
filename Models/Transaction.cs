@@ -7,7 +7,7 @@ public class Transaction
     public int BudgetId { get; set; } = 0;
 
     public int UserId { get; set; } = 0;
-    
+
     public DateTime DateCreated { get; set; } = DateTime.UtcNow;
 
     public TransactionType Type { get; set; } = 0;
@@ -16,7 +16,7 @@ public class Transaction
 
     public string? Note { get; set; }
 
-    public Category Category { get; set; } = 0;
+    public Category TransactionCategory { get; set; } = new Category();
 
 }
 
